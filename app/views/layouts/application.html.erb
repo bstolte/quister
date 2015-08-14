@@ -9,47 +9,30 @@
 
 
 <body cz-shortcut-listen="true">
-
     <div class="site-wrapper">
+    	<div class="site-wrapper-inner">
+    		<div class="cover-container">
+    			<div class="masthead clearfix">
+            		<div class="inner">
+              			<h3 class="masthead-brand">Quister</h3>
+              			<nav>
+                			<ul class="nav masthead-nav">
+                				<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+                				<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
+                			</ul>
+              			</nav>
+            		</div>
+          		</div>
 
-      <div class="site-wrapper-inner">
+				<%= yield %>          		
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Quister</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-<%= yield %>
-
+          		<div class="mastfoot">
+            		<div class="inner">
+              			<p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            		</div>
+          		</div>
+        	</div>
+      	</div>
+     </div>
 </body>
 </html>
