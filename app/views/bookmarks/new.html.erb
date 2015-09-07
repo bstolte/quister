@@ -1,0 +1,15 @@
+<div class="bookmark-form col-xs-8 col-xs-offset-2" align="left">
+
+<h1 class="bookmark-label" align="center">Enter Your Bookmark Details</h1>
+<br />
+<br />
+
+<%= simple_form_for @bookmark do |f| %>
+    <%= f.input :name, label: 'Enter the website name:' %>
+    <%= f.input :description, label: 'Why is the site great?' %>
+    <%= f.input :link, label: 'Enter the URL:', placeholder: 'http://...' %>
+    <br />
+    <%= f.submit 'Add', :class => 'btn btn-primary btn-lg' %>
+  <% end %>
+
+</div>

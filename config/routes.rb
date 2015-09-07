@@ -2,6 +2,8 @@ Quister::Application.routes.draw do
   root 'bookmarks#index'
   get 'about', :to => 'products#about'
 
+  resources :bookmarks
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
