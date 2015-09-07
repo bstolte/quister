@@ -1,5 +1,5 @@
 Quister::Application.routes.draw do
-  root 'products#index'
+  root 'bookmarks#index'
   get 'about', :to => 'products#about'
 
 

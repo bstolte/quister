@@ -1,0 +1,16 @@
+<div class="inner cover">
+  <h1 class="cover-heading">My Bookmarks</h1>
+    <p class="lead">For quiz #2, we'll list out some of our favorite bookmarks and let anyone add to the list...</p>
+</div>
+
+<div class="clear"></div>
+
+<div>
+	<% @bookmarks.each do |bookmark| %>
+  		<div>
+    		<h3><%= bookmark.name %></h3>
+    		<p><%= bookmark.description %></p>
+    		<i><%= link_to bookmark.link, bookmark.link %></i>
+  		</div>
+	<% end %>
+</div>

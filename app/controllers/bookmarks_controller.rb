@@ -1,5 +1,5 @@
-class ProductsController < ApplicationController
-	
+class BookmarksController < ApplicationController
+
 	def index
 		@bookmarks = Bookmark.all
 		
@@ -8,5 +8,4 @@ class ProductsController < ApplicationController
 	def about
 		
 	end
-
 end
