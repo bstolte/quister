@@ -1,28 +1,8 @@
-== README
+== QUISTER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Quiz #1 for the Firehose Project.  A small app that has the following...
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* page with static content on it.
+* hosted on heroku
+* hosted up on GitHub.
+* headline on the page of the application that is a non-black color.
